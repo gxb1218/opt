@@ -43,7 +43,7 @@ public class MengYanCodeUtil {
         //2、设置数据源
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://localhost:3306/mengyan?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8");
-        dsc.setDriverName("com.mysql.jdbc.Driver");
+        dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
         dsc.setDbType(DbType.MYSQL);
