@@ -1,10 +1,15 @@
 package mengyan.springsecurity.modular.user.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
+import java.util.List;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -73,5 +78,18 @@ public class SysUser implements Serializable {
     @ApiModelProperty(value = "删除标志（0代表未删除，1代表已删除）")
     private Integer delFlag;
 
+    public static void main(String[] args) {
+        List<String> arrList = Arrays.asList("CICCBJFI","02100201");
+        arrList.forEach(item -> {
+            addString(item);
+            System.err.println("测试成功"+item);
+        });
+    }
 
+    private static void addString(String arr) {
+        if (arr.contains("CICCBJFI") || arr.contains("02100201")) {
+            return;
+        }
+        System.err.println("-------");
+    }
 }
