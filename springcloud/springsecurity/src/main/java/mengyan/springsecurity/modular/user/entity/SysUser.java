@@ -2,14 +2,13 @@ package mengyan.springsecurity.modular.user.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
-import com.baomidou.mybatisplus.annotation.Version;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import java.util.List;
 
+import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -28,6 +27,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @ApiModel(value="SysUser对象", description="用户表")
+@TableName("sys_user")
 public class SysUser implements Serializable {
 
     private static final long serialVersionUID = 1L;
