@@ -17,7 +17,6 @@ import java.util.Collection;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
 public class LoginUser implements UserDetails {
 
     private SysUser user;
