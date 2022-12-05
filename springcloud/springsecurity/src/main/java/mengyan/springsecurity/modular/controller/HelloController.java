@@ -5,10 +5,12 @@
  */
 package mengyan.springsecurity.modular.controller;
 
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class HelloController {
 
     @RequestMapping("/hello")

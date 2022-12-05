@@ -6,4 +6,6 @@ import mengyan.springsecurity.response.ResponseResult;
 public interface LoginService {
 
     ResponseResult login(SysUser user);
+
+    ResponseResult logout();
 }
