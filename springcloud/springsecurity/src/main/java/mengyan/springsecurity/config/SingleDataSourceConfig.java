@@ -23,8 +23,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
  * 多数据源配置，多数据源配置因为和单数据源冲突，所以现在默认版本删除了多数据源配置
  * <p>
  *
- * @author huatech
- * @Date 2017/5/20 21:58
+ * @author guoxb
+ * @Date 2022/11/20 21:58
  */
 @Configuration
 @EnableTransactionManagement(proxyTargetClass = true)

@@ -4,4 +4,16 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.cj.jdbc.Driver
-
+mybatis-plus:
+  mapper-locations:
+    - classpath*:mengyan/springsecurity/modular/**/mapping/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    lazy-loading-enabled: true
+    multiple-result-sets-enabled: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+      banner: false
+      db-config:
+        id-type: assign_id
+        table-underline: true
